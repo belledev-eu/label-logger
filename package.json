@@ -2,10 +2,8 @@
   "name": "label-logger",
   "version": "1.0.0",
   "description": "Easy to use logging system for your apps (JavaScript)",
-  "main": "index.js",
-  "scripts": {
-    "test": "node index.js"
-  },
+  "main": "index.mjs",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/belledev-eu/label-logger.git"
@@ -27,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/belledev-eu/label-logger/issues"
   },
-  "homepage": "https://github.com/belledev-eu/label-logger#readme"
+  "homepage": "https://github.com/belledev-eu/label-logger#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
 }
