@@ -12,7 +12,7 @@ npm i label-logger
 const Logger = require("label-logger");
 const { info, debug, warn, error } = new Logger("My Logger");
 
-info("LABEL", <your-data>)
+info("LABEL", <your-data>);
 ```
 
 ## License
