@@ -1,5 +1,5 @@
-import "colors";
-import "node:process";
+require("colors");
+const process = require("node:process");
 
 const identifiers = [];
 
@@ -20,7 +20,7 @@ function makeId(_length) {
   return finalId;
 }
 
-export default class Logger {
+module.exports = class Logger {
   constructor(_name) {
     this.name = _name;
     this.id = makeId(5);
@@ -61,4 +61,4 @@ export default class Logger {
     process.stdout.write(`[${_label.bgRed}] ${String(_data).red}\n`);
     return;
   }
-}
+};
